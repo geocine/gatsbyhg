@@ -1,0 +1,85 @@
+/* Layout */
+
+.layout {
+  display: grid;
+  grid-template-areas: 'header header header' 'nav content side' 'footer footer footer';
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 0.5rem;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: side;
+  margin-right: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* Theme */
+
+/* This is optional, you can use your own style for this */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+  font-size: 18px;
+  color: #fff;
+  min-height: 20px;
+  background: #0a2b4e;
+  padding: 20px;
+}
+
+nav,
+aside {
+  background: #666;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar-item {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-item img {
+  height: 20px;
+}
+
+.pagination {
+  margin: 0;
+  background: black;
+}
+
+.pagination a {
+  color: #fff;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  padding: 20px;
+}
